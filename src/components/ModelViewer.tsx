@@ -10,14 +10,14 @@ export function ModelViewer({
   onDownload,
   className = ''
 }: ModelViewerProps) {
-  return <div className={`bg-[#fdfceb] rounded-[30px] p-8 relative min-h-[600px] flex items-center justify-center ${className}`}>
-      <button onClick={onShare} className="absolute top-6 right-6 bg-black text-white px-8 py-6 rounded-[30px] font-extrabold text-xl md:text-2xl hover:bg-gray-800 transition-colors">
+  return <div className={`bg-[#fdfceb] rounded-[30px] p-4 md:p-6 relative flex items-center justify-center ${className}`}>
+      <button onClick={onShare} className="absolute top-4 right-4 bg-black text-white px-4 py-3 md:px-6 md:py-4 rounded-[30px] font-extrabold text-sm md:text-lg hover:bg-gray-800 transition-colors z-10">
         share
       </button>
-      <div className="w-full max-w-[600px] aspect-square flex items-center justify-center">
+      <div className="w-full aspect-square flex items-center justify-center">
         <img src={modelImage} alt="3D Model visualization" className="w-full h-full object-contain" />
       </div>
-      <button onClick={onDownload} className="absolute bottom-6 right-6 bg-black text-white px-8 py-6 rounded-[30px] font-extrabold text-xl md:text-2xl hover:bg-gray-800 transition-colors">
+      <button onClick={onDownload} className="absolute bottom-4 right-4 bg-black text-white px-4 py-3 md:px-6 md:py-4 rounded-[30px] font-extrabold text-sm md:text-lg hover:bg-gray-800 transition-colors z-10">
         download
       </button>
     </div>;

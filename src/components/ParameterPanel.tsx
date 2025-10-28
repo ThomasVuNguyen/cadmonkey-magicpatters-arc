@@ -18,9 +18,9 @@ interface ParameterPanelProps {
 export function ParameterPanel({
   parameters
 }: ParameterPanelProps) {
-  return <div className="bg-[#fdfceb] rounded-[30px] p-8 min-h-[500px]">
-      <pre className="font-extrabold text-black text-xl md:text-2xl leading-relaxed">
-        <div className="mb-4"> // Lady Parameters</div>
+  return <div className="bg-[#fdfceb] rounded-[30px] p-4 md:p-6 flex-1 overflow-auto">
+      <pre className="font-extrabold text-black text-sm md:text-lg leading-relaxed">
+        <div className="mb-2"> // Lady Parameters</div>
         Lady Parameters
         {Object.entries(parameters).map(([key, value]) => <div key={key}>
             {key} = {value};
